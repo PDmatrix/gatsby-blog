@@ -1,24 +1,10 @@
 ---
-title: Title
-date: 2019-03-27T16:35:12.099Z
-description: Lorem markdownum illo Palilibus montes pro orbem, mea quem et
-tags: ["title"]
+title: 'Advent of Code - Year 2015 - Day 01, Day 02'
+date: 2019-03-29T16:35:12.099Z
+description: 'Solution to Advent of Code Year 2015 - Day 01, Day 02'
 ---
-![Image](/images/uploads/coding-hello-world-programming.jpeg "Image")
+_This is my first blog post in a fascinating series of Advent of Code puzzles, where I sincerely try to properly explain workable solutions. All solutions will be solved using language C#._
 
-Lorem markdownum illo Palilibus montes pro orbem, mea quem et [defenditur
-videri](http://www.tenebras.com/) consiliique litore, vox cuncta leonis umbras.
-Aequoris sacrificos umeros verticibusque **ostendit**, Minervae secundis haec
-portasque admotam mensae. Quae forte Aurorae praerupit male Lampetie iussa.
+__
 
-* Fulminis murmure lacerare umbrosum finivit toto
-* Regnat habetque denegat ne cortice infelicem
-* Unco quoque referri
-* Petis et undique dedit
-* Illis mihi sibi prius petit effugere scitis
-* Demersus mille gravi
-
-```javascript
-var a = 5;
-console.log(a);
-```
+## _\--- Day 1: Not Quite Lisp ---_
