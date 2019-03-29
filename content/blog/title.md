@@ -14,7 +14,7 @@ In this puzzle we got Santa trying to deliver presents in a large apartment buil
 ### Part 1
 
 Our goal for the first part was to calculate what floor do the instructions take Santa. My solution for this part was pretty easy, I take every instruction and depending on the value I either sum result by 1 or -1.
-```C#
+```csharp
 public string Part1(IEnumerable<string> input)
 {
     var directions = input.First();
