@@ -2,6 +2,7 @@
 title: Title
 date: 2019-03-27T16:35:12.099Z
 description: Lorem markdownum illo Palilibus montes pro orbem, mea quem et
+tags: ["title"]
 ---
 ![Image](/images/uploads/coding-hello-world-programming.jpeg "Image")
 
