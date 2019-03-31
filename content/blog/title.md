@@ -1,5 +1,5 @@
 ---
-title: Advent of Code - Year 2015 - Day 01
+title: Advent of Code. Year 2015. Day 01
 date: 2019-03-29T16:35:12.099Z
 description: Solution to Advent of Code Year 2015 - Day 01
 tags:
