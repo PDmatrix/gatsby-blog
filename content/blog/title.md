@@ -1,7 +1,7 @@
 ---
-title: Advent of Code. Year 2015. Day 01
-date: 2019-03-29T16:35:12.099Z
-description: Solution to Advent of Code Year 2015 - Day 01
+title: Advent of Code. Year 2015. Day 1
+date: 2019-03-31T17:35:12.099Z
+description: Solution to Advent of Code Year 2015 - Day 1
 tags:
   - aoc-2015
 ---
