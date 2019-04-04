@@ -11,7 +11,7 @@ In this challenge we have to help elves by calculating the required wrapping pap
 
 ### Part 1
 
-In part one we have to find how many total square feet of wrapping paper should they order. 
+In the first part we have to find how many total square feet of wrapping paper should they order. To do that, we are parsing input into separate variables. Then we are finding the smallest side of the present. After that we are summing it with the value calculated by the formula.
 
 ```csharp
 public string Part1(IEnumerable<string> input)
@@ -32,10 +32,20 @@ public string Part1(IEnumerable<string> input)
 
 ### Part 2
 
-second part description
+In the second part we have to find how many total feet of ribbon should they order. To find the answer, we are getting input, sorting it. Then, we are multiplying the first two items by 2 to get the shortest distance and then summing it by cubic feet of volume of the present to get result.
 
 ```csharp
-solution
+public string Part2(IEnumerable<string> input)
+{
+  var result = 0;
+  foreach (var dimension in input)
+  {
+    var dims = dimension.Split('x').Select(int.Parse).ToList();
+    dims.Sort();
+    result += dims[0] * 2 + dims[1] * 2 + dims.Aggregate((i, w) => i * w);
+  }
+  return result.ToString();
+}
 ```
 
 ---
