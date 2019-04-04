@@ -23,8 +23,8 @@ public string Part1(IEnumerable<string> input)
     int l = dims[0],
         w = dims[1],
         h = dims[2];
-    var smallestSide = Math.Min(Math.Min(l * w, w * h), h * l); //highlight-line
-    result += smallestSide + 2 * l * w + 2 * w * h + 2 * h * l; //highlight-line
+    var smallestSide = Math.Min(Math.Min(l * w, w * h), h * l);//highlight-line
+    result += smallestSide + 2 * l * w + 2 * w * h + 2 * h * l;//highlight-line
   }
   return result.ToString();
 }
