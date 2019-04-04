@@ -7,7 +7,7 @@ tags:
 ---
 ## --- Day 2: I Was Told There Would Be No Math ---
 
-In this challenge we have to help elves by calculating the required wrapping paper for each gift. Fortunately, they gave us a formula (`2*l*w + 2*w*h + 2*h*l`), which makes things a little easier. The elves also need a little extra paper for each present: the area of the smallest side.
+In this challenge, we have to help elves by calculating the required wrapping paper for each gift. Fortunately, they gave us a formula (`2*l*w + 2*w*h + 2*h*l`), which makes things a little easier. The elves also need a little extra paper for each present: the area of the smallest side.
 
 ### Part 1
 
