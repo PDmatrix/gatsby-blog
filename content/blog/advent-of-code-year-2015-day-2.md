@@ -7,14 +7,27 @@ tags:
 ---
 ## --- Day 2: I Was Told There Would Be No Math ---
 
-problem description
+In this challenge we have to help elves by calculating the required wrapping paper for each gift. Fortunately, they gave us a formula, which makes things a little easier. The elves also need a little extra paper for each present: the area of the smallest side.
 
 ### Part 1
 
-first part description
+In part one we have to find how many total square feet of wrapping paper should they order. 
 
 ```csharp
-solution
+public string Part1(IEnumerable<string> input)
+{
+  var result = 0;
+  foreach (var dimension in input)
+  {
+    var dims = dimension.Split('x').Select(int.Parse).ToList();
+    int l = dims[0],
+        w = dims[1],
+        h = dims[2];
+    var smallestSide = Math.Min(Math.Min(l * w, w * h), h * l); //highlight-line
+    result += smallestSide + 2 * l * w + 2 * w * h + 2 * h * l; //highlight-line
+  }
+  return result.ToString();
+}
 ```
 
 ### Part 2
