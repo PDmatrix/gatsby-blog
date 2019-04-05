@@ -41,11 +41,11 @@ class BlogIndex extends React.Component {
               />
               {tags.map(tag => {
                 return (
-                  <>
+                  <React.Fragment key={tag}>
                     <Link to={`/tags/${tag}`}>
-                      <span key={tag}>#{tag}</span>
+                      <span>#{tag}</span>
                     </Link>{" "}
-                  </>
+                  </React.Fragment>
                 )
               })}
             </div>

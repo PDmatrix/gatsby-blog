@@ -39,13 +39,13 @@ class BlogIndex extends React.Component {
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
-              {tags.map(tag => {
+              {tags.map((tag) => {
                 return (
-                  <>
+                  <React.Fragment key={tag}>
                     <Link to={`/tags/${tag}`}>
-                      <span key={tag}>#{tag}</span>
+                      <span>#{tag}</span>
                     </Link>{" "}
-                  </>
+                  </React.Fragment>
                 )
               })}
             </div>
