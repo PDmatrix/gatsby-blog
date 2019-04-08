@@ -43,12 +43,9 @@ In the second part, we have Santa and Robo-Santa to deliver presents. I created 
 public string Part2(IEnumerable<string> input)
 {
   var directions = input.First();
-  var santa = new {X = 0, Y = 0};
- // 1
-  var roboSanta = new {X = 0, Y = 0};
- // 1
-  var santaTurn = true;
- // 2
+  var santa = new {X = 0, Y = 0}; // 1
+  var roboSanta = new {X = 0, Y = 0}; // 1
+  var santaTurn = true; // 2
   var points = new HashSet<object>{santa};
   foreach (var direction in directions)
   {
