@@ -11,9 +11,9 @@ class BlogIndex extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-
+    const injectedStyles = {maxWidth: rhythm(20)}
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout injectedStyles={injectedStyles} location={this.props.location} title={siteTitle}>
         <SEO
           title="All posts by tag"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}

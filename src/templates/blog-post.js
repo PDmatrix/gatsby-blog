@@ -11,9 +11,9 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
-
+    const injectedStyles = {maxWidth: rhythm(30)}
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout injectedStyles={injectedStyles} location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}

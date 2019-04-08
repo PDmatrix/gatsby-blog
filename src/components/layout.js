@@ -5,7 +5,19 @@ import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, title, children, injectedStyles } = this.props
+    const styles = {
+      ...{
+        marginLeft: `auto`,
+        marginRight: `auto`,
+        maxWidth: rhythm(24),
+        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        color: "var(--textNormal)",
+        transition: "color 0.2s ease-out, background 0.2s ease-out",
+        minHeight: "100vh",
+      },
+      ...injectedStyles,
+    }
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
@@ -53,12 +65,7 @@ class Layout extends React.Component {
     }
     return (
       <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
+        style={styles}
       >
         <header>{header}</header>
         <main>{children}</main>

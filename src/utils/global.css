@@ -1,3 +1,13 @@
+body {
+    --bg: #282a36;
+    --textNormal: rgba(255, 255, 255, 0.88);
+    --hr: hsla(0, 0%, 100%, 0.2);
+    -webkit-font-smoothing: antialiased;
+    --codeBg: #2d2d2d70;
+    --link: #fffeaa;
+    background-color: var(--bg);
+}
+
 .gatsby-highlight-code-line {
     background-color: hsla(298, 8%, 34%, 0.26);
     display: block;
@@ -9,7 +19,7 @@
 }
 
 .gatsby-highlight {
-    background-color: #2d2d2d;
+    background-color: var(--codeBg);
     border-radius: 0.3em;
     margin: 0.5em 0;
     padding: 1em;
@@ -21,6 +31,6 @@
     margin: 0;
     padding: 0;
     overflow: initial;
-    float: left; /* 1 */
-    min-width: 100%; /* 2 */
+    float: left;
+    min-width: 100%;
 }

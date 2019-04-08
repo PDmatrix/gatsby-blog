@@ -5,9 +5,18 @@ import "./global.css"
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
+    "a": {
+      color: `var(--link)`
+    },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "p": {
+      color: `var(--textNormal)`
+    },
+    "hr": {
+      background: `var(--hr)`
+    }
   }
 }
 
