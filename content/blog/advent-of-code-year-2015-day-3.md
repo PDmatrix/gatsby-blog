@@ -37,7 +37,7 @@ public string Part1(IEnumerable<string> input)
 
 ### Part 2
 
-In the second part, we have Santa and Robo-Santa to deliver presents. I created two objects that represent the location of the Santas (**1**) and boolean variable for Santa's turn (**2**) then, based on this variable I am computing the new location and adding it to the HashSet of points.
+In the second part, we have Santa and Robo-Santa to deliver presents. I created two objects that represent the location of the Santa's (**1**) and boolean variable for Santa's turn (**2**) then, based on this variable I am computing the new location and adding it to the HashSet of points.
 
 ```csharp{5-7}
 public string Part2(IEnumerable<string> input)
