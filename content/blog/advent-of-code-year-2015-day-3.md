@@ -37,15 +37,15 @@ public string Part1(IEnumerable<string> input)
 
 ### Part 2
 
-part2
+In the second part, we have Santa and Robo-Santa to deliver presents. I created two objects that represent the location of the Santas (**1**) and boolean variable for Santa's turn (**2**) then, based on this variable I am computing the new location and adding it to the HashSet of points.
 
-```csharp
+```csharp{5,6,7}
 public string Part2(IEnumerable<string> input)
 {
   var directions = input.First();
-  var santa = new {X = 0, Y = 0};
-  var roboSanta = new {X = 0, Y = 0};
-  var santaTurn = true;
+  var santa = new {X = 0, Y = 0}; // 1
+  var roboSanta = new {X = 0, Y = 0}; // 1
+  var santaTurn = true; // 2
   var points = new HashSet<object>{santa};
   foreach (var direction in directions)
   {
