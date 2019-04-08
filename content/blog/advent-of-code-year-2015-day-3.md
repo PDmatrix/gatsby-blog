@@ -40,7 +40,33 @@ public string Part1(IEnumerable<string> input)
 part2
 
 ```csharp
-code
+public string Part2(IEnumerable<string> input)
+{
+  var directions = input.First();
+  var santa = new {X = 0, Y = 0};
+  var roboSanta = new {X = 0, Y = 0};
+  var santaTurn = true;
+  var points = new HashSet<object>{santa};
+  foreach (var direction in directions)
+  {
+    var location = santaTurn ? santa : roboSanta;
+    if (direction == '>')
+      location = new {X = location.X + 1, location.Y};
+    if (direction == '<')
+      location = new {X = location.X - 1, location.Y};
+    if (direction == '^')
+      location = new {location.X, Y = location.Y + 1};
+    if (direction == 'v')
+      location = new {location.X, Y = location.Y - 1};
+    if (santaTurn)
+      santa = location;
+    else
+      roboSanta = location;
+    santaTurn = !santaTurn;
+    points.Add(location);
+  }
+  return points.Count.ToString();
+}
 ```
 
 ---
