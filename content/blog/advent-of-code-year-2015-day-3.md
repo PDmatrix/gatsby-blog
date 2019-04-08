@@ -17,8 +17,8 @@ For this part, I created an anonymous object (**1**) for Santa's location and Ha
 public string Part1(IEnumerable<string> input)
 {
   var directions = input.First();
-  var location = new {X = 0, Y = 0}; // 1 // highlight-line 
-  var points = new HashSet<object>{location}; // 2 // highlight-line 
+  var location = new {X = 0, Y = 0}; // highlight-line 
+  var points = new HashSet<object>{location}; // highlight-line 
   foreach (var direction in directions)
   {
     if (direction == '>')
@@ -29,7 +29,7 @@ public string Part1(IEnumerable<string> input)
       location = new {location.X, Y = location.Y + 1};
     if (direction == 'v')
       location = new {location.X, Y = location.Y - 1};
-    points.Add(location); // 3 // highlight-line 
+    points.Add(location); // highlight-line 
   }
   return points.Count.ToString();
 }
