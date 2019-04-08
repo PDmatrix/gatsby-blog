@@ -7,7 +7,7 @@ tags:
 ---
 ## --- Day 3: Perfectly Spherical Houses in a Vacuum ---
 
-In this puzzle we have Santa delivering presents to an infinite two-dimensional grid of houses. He begins by delivering a present to the house at his starting point `[0, 0]` and then an elf at the North Pole calls him via radio and tells him where to move next. But the elf's directions are a little of, and Santa ends up visiting some houses more than once. We have to find how many houses receive at least one present.
+In this puzzle, we have Santa delivering presents to an infinite two-dimensional grid of houses. He begins by delivering a present to the house at his starting point `[0, 0]` and then an elf at the North Pole calls him via radio and tells him where to move next. But the elf's directions are a little of, and Santa ends up visiting some houses more than once. We have to find how many houses receive at least one present.
 
 ### Part 1
 
