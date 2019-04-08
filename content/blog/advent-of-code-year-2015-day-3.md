@@ -13,12 +13,12 @@ In this puzzle, we have Santa delivering presents to an infinite two-dimensional
 
 For this part, I created an anonymous object (**1**) for Santa's location and HashSet of points (**2**). After that, I go through all of the directions and compute Santa's new location based on the direction and the previous location and add it to the HashSet of points (**3**).
 
-```csharp
+```csharp{4-5, 16}
 public string Part1(IEnumerable<string> input)
 {
   var directions = input.First();
-  var location = new {X = 0, Y = 0}; // highlight-line 
-  var points = new HashSet<object>{location}; // highlight-line 
+  var location = new {X = 0, Y = 0}; // 1
+  var points = new HashSet<object>{location}; // 2
   foreach (var direction in directions)
   {
     if (direction == '>')
@@ -29,7 +29,7 @@ public string Part1(IEnumerable<string> input)
       location = new {location.X, Y = location.Y + 1};
     if (direction == 'v')
       location = new {location.X, Y = location.Y - 1};
-    points.Add(location); // highlight-line 
+    points.Add(location); // 3
   }
   return points.Count.ToString();
 }
